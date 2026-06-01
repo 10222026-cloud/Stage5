@@ -1,1 +1,44 @@
+===== BASELINE =====
 
+[[6 0]
+ [2 10]]
+
+precision recall f1-score support
+
+0 0.75 1.00 0.86 6
+1 1.00 0.83 0.91 12
+
+accuracy 0.89
+ROC-AUC: 0.9444
+
+===== CLASS WEIGHT =====
+
+[[6 0]
+ [2 10]]
+
+accuracy 0.89
+ROC-AUC: 0.9444
+
+===== SMOTE =====
+
+[[6 0]
+ [2 10]]
+
+accuracy 0.89
+ROC-AUC: 0.9306
+
+===== THRESHOLD (0.3) =====
+
+[[5 1]
+ [2 10]]
+
+accuracy 0.83
+ROC-AUC: 0.9306
+
+===== FOCAL (SIMULATED) =====
+
+[[3 3]
+ [0 12]]
+
+accuracy 0.83
+ROC-AUC: 0.9722
