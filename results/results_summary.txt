@@ -1,1 +1,29 @@
+BASELINE
+Accuracy: 0.89
+Recall: 0.83
+Precision: 1.00
+ROC-AUC: 0.9444
 
+CLASS WEIGHT
+Accuracy: 0.89
+Recall: 0.83
+Precision: 1.00
+ROC-AUC: 0.9444
+
+SMOTE
+Accuracy: 0.89
+Recall: 0.83
+Precision: 1.00
+ROC-AUC: 0.9306
+
+THRESHOLD (0.3)
+Accuracy: 0.83
+Recall: 0.83
+Precision: 0.91
+ROC-AUC: 0.9306
+
+FOCAL LOSS (SIMULATED)
+Accuracy: 0.83
+Recall: 1.00
+Precision: 0.80
+ROC-AUC: 0.9722
