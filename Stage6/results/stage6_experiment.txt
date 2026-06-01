@@ -1,1 +1,22 @@
+Stage 6 Experimental Notes
 
+Dataset:
+sample.csv
+
+Baseline Logistic Regression:
+Accuracy = 0.89
+Recall = 0.83
+ROC-AUC = 0.9444
+
+Observation:
+Model performs well on majority class but still misses some rare events.
+
+Planned AIHF improvement:
+Automatic selection between:
+- Class Weighting
+- SMOTE
+- Threshold Tuning
+- Focal Loss
+
+Goal:
+Increase recall while keeping precision acceptable.
