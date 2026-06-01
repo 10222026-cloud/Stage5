@@ -1,1 +1,17 @@
+Stage 6 Development Plan
 
+Topic:
+Handling Class Imbalance in Rare Event Detection
+
+New Proposed Method:
+Adaptive Imbalance Handling Framework
+
+Features:
+1. Class Weighting
+2. SMOTE
+3. Threshold Tuning
+4. Focal Loss
+5. Automatic Method Selection
+
+Goal:
+Improve recall while maintaining acceptable precision.
