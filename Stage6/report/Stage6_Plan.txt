@@ -3,15 +3,50 @@ Stage 6 Development Plan
 Topic:
 Handling Class Imbalance in Rare Event Detection
 
-New Proposed Method:
-Adaptive Imbalance Handling Framework
+Problem:
+Industrial sensor datasets contain very few fault samples compared to normal samples.
+Traditional machine learning models become biased toward the majority class and fail to detect rare anomalies.
 
-Features:
-1. Class Weighting
-2. SMOTE
-3. Threshold Tuning
-4. Focal Loss
-5. Automatic Method Selection
+Proposed Method:
+Adaptive Imbalance Handling Framework (AIHF)
 
-Goal:
-Improve recall while maintaining acceptable precision.
+Idea:
+Instead of using a single imbalance-handling method, the system automatically selects the best strategy according to dataset characteristics.
+
+Framework Components:
+
+1. Data Preprocessing
+   - Missing value removal
+   - Normalization
+   - Noise filtering
+
+2. Imbalance Analysis
+   - Calculate class distribution
+   - Compute imbalance ratio
+
+3. Adaptive Method Selection
+   - Mild imbalance -> Class Weighting
+   - Medium imbalance -> Threshold Tuning
+   - Severe imbalance -> SMOTE + Class Weighting
+   - Extreme imbalance -> Focal Loss
+
+4. Model Training
+   - Logistic Regression baseline
+
+5. Evaluation
+   - Accuracy
+   - Recall
+   - Precision
+   - F1-score
+   - ROC-AUC
+
+Expected Benefits:
+- Higher recall for rare events
+- Reduced metric distortion
+- Better industrial deployment performance
+- Lower false negative rate
+
+Future Work:
+- Deep learning implementation
+- Real VM25 sensor integration
+- Real-time anomaly detection
